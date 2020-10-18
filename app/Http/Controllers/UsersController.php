@@ -252,7 +252,7 @@ class UsersController extends Controller
     //
 
         $userClass = new User;
-        $user = $userClass->find($log[0]['userId'])->get();
+        $user = $userClass->where('id', '=', $log[0]['userId'])->get();
 
         $result = [
             'result' => 'success',
