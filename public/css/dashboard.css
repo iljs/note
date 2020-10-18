@@ -1,0 +1,153 @@
+.notesWindow{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.notes{
+    max-width: 1200px;
+    width: 90%;
+    max-height: 800px;
+    height: 80%;
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.allNotes{
+    width: 299px;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid white;
+}
+
+.allNotesList{
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    height: calc(100% - 55px);
+}
+
+.allNotesList::-webkit-scrollbar {
+    width: 0;
+}
+
+.notesListBlock{
+    height: 58px;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    width: 100%;
+    cursor: pointer;
+}
+
+.notesListBlock.active{
+    background: rgba(255,255,255,0.1);
+}
+
+.notesListBlock h2{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.notesListBlock p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-left: 20px;
+    opacity: 0.7;
+}
+
+.notesHeader{
+    border-bottom: 1px solid white;
+    padding: 15px;
+    overflow: hidden;
+}
+.notesHeader img{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.note{
+    width: calc(100% - 300px);
+    height: 100%;
+    overflow: hidden;
+}
+
+.note input{
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    background: rgb(43 47 57);
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    font-family: Montserrat;
+}
+
+.note textarea{
+    font-size: 21px;
+    padding: 15px;
+    width: 100%;
+    height: calc(100% - 55px);
+    background: rgb(43 47 57);
+    border: none;
+    color: white;
+    outline: none;
+    resize: none;
+    font-family: Montserrat;
+}
+
+
+#userInfo{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+
+#userCircle{
+    border-radius: 100px;
+    background: white;
+    float: left;
+    width: 40px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+#userCircle p{
+    color: #131722;
+    font-weight: 500;
+}
+
+#userText{
+    float: right;
+    margin-left: 10px;
+}
+
+#userText h3{
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+}
+
+#userText p{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
