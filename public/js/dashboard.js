@@ -237,6 +237,20 @@ function userInfo(){
             $("h3","#userText").html(data.data.email);
             $("p","#userText").html(data.data.name);
         }
+
+        if (data.result == 'error')
+        {
+            console.log('Error #' + data.code);
+
+            if (data.code == 0) {
+                deleteCookie('token'); // Delete token from cookie
+            }
+            if (data.code == 2) {
+                deleteCookie('token'); // Delete token from cookie
+            }
+
+            window.location.replace("./"); // Replace to Auth
+        }
     });
 }
 
