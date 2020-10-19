@@ -319,6 +319,9 @@ $(document).ready(function() {
 //
 
 $(document).on('click', '.notesListBlock',function(){
+    let oldNoteId = $("#metaInfo").attr("noteid");
+
+    $('[key = ' + oldNoteId + ']').removeClass('active');
     $("#metaInfo").attr("noteid", $(this).attr("key")); // Update noteId in meta-teg
 
     let ikey = parseInt($(this).attr('ikey'),10); // Get key(This key is needed to select the desired array)
